@@ -5,8 +5,8 @@ POST http://localhost:8080/api/v1/student
 Content-Type: application/json
 
 {
-  "name": "Boaty",
-  "email": "boaty@gmail.com",
+  "name": "NewStudent",
+  "email": "newstudent@gmail.com",
   "dob": "2022-07-14"
 }
 
@@ -21,7 +21,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:8080/api/v1/student/3?pName=Bear&pEmail=bear@gmail.com
+PUT http://localhost:8080/api/v1/student/6?pName=Xmm&pEmail=xmm@gmail.com
 Content-Type: application/json
 
 ###
