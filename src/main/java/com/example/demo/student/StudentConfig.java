@@ -27,8 +27,29 @@ public class StudentConfig {
                     LocalDate.of(2002, Month.SEPTEMBER, 8)
             );
 
+            Student first = new Student(
+                    1L,
+                    "First",
+                    "first@gmail.com",
+                    LocalDate.of(2021, Month.NOVEMBER, 27)
+            );
+
+            Student meet = new Student(
+                    1L,
+                    "Meet",
+                    "meet@gmail.com",
+                    LocalDate.of(2021, Month.OCTOBER, 21)
+            );
+
+            Student boaty = new Student(
+                    1L,
+                    "Boaty",
+                    "boaty@gmail.com",
+                    LocalDate.of(2022, Month.JULY, 15)
+            );
+
             pRepository.saveAll(
-                    List.of(someone, zichh)
+                    List.of(zichh, someone, first, meet, boaty)
             );
         };
     }
