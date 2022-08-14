@@ -1,5 +1,9 @@
 # Spring Boot Student Database
 
+<p align="center">
+  <img src="https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg?w=690&h=388&c=crop">
+</p>
+
 ## Student Database
 Implemented a Student Database using Spring Boot (and PosgresSQL).
 * Implemented with an API layer (@RestController StudentController) that communicates to a service layer (@Service StudentService class) and a data access layer (@Configuration StudentConfig class and @Repository StudentRepository class) to retrieve/store/modify information from the PostgresSQL database.
@@ -23,3 +27,14 @@ The @DeleteMapping method deleteStudent allows the StudentController to delete a
 The @PutMapping method updateStudent allows the StudentController to modify the name and/or email of an existing student via the student service layer (StudentService class) if there is a student with the same ID registered. The service layer ensures that, if a new email is provided, no students with that email addess already exist.
 * The @Repository StudentRepository interface provides a @Query method findStudentByEmail to help for this method
 
+## Student Class
+<p align="center">
+  <img src="https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg?w=690&h=388&c=crop">
+</p>
+
+The @Entity @TableStudent class represents a student with the following information:
+* ID: Long that represents the unique ID of the student (@Id @SequenceGenerator). Only the first student needs to be initialized with an ID, and the other students have an auto-generated ID.
+* name: String that represents the name of the student.
+* email: String that represents the unique email of the student.
+* dob: LocalDate that represents the date of birth of the student.
+* age: Integer that represents the age of the student. The age is computed automatically and will not be found in the actual Postgres database (@Transient field).
