@@ -48,8 +48,15 @@ public class StudentConfig {
                     LocalDate.of(2022, Month.JULY, 15)
             );
 
+            Student cheerleaderBear = new Student(
+                    1L,
+                    "Cheerleader Bear",
+                    "cheerleaderbear@gmail.com",
+                    LocalDate.of(2022, Month.JULY, 15)
+            );
+
             pRepository.saveAll(
-                    List.of(zichh, someone, first, meet, boaty)
+                    List.of(zichh, someone, first, meet, boaty, cheerleaderBear)
             );
         };
     }
