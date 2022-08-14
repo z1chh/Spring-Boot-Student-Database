@@ -1,7 +1,7 @@
 # Spring Boot Student Database
 
 <p align="center">
-  <img src="https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg?w=690&h=388&c=crop">
+  <img src="Spring Boot Student Layers.jpg">
 </p>
 
 ## Student Database
@@ -29,7 +29,7 @@ The @PutMapping method updateStudent allows the StudentController to modify the 
 
 ## Student Class
 <p align="center">
-  <img src="https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg?w=690&h=388&c=crop">
+  <img src="Spring Boot Student Class.jpg">
 </p>
 
 The @Entity @TableStudent class represents a student with the following information:
